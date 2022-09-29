@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int day = 0;
+    scanf("%d",&day);
+    switch(day)
+    {
+        case 1:
+        case 2:
+        case 3:
+        printf("工作\n");
+        break;
+        case 4:
+        printf("休息\n");
+        default:
+        printf("输入错误\n");
+        break;
+    }
+return 0;
+}
+
+int main()
+{
+    int i = 1;
+    while(i <= 10)
+    {
+        if(i == 5)
+            break;
+        printf("%d ",i);
+        i++;
+    }
+return 0;
+}
+
+put 1 2 3 4 
+
+int main()
+{
+    int i = 1;
+    while(i <= 10)
+    {
+        if(i == 5)
+            continue;
+        printf("%d ",i);
+        i++;
+    }
+return 0;
+}
+
+int main()
+{
+    int ret = 0;
+    int ch = 0;
+    char passport[20] = {0};
+    printf("输入密码\n");
+    scanf("%s",passport);
+    while((ch=getchar() != '\n'))
+    {
+        ;
+    }
+    printf("请确认(Y\N):");
+    ret = getchar();
+    if(ret == 'Y')
+    {
+        printf("确认成功");
+    }
+    else
+    {
+        printf("放弃确认");
+    }
+    return 0;
+}
+
+int main()
+{
+    int ch = 0;
+    while((ch = getchar()) != EOF)//左ctrl+z退出
+    {
+        if(ch<'0'||ch>'9')
+            continue;
+            putchar(ch);
+    }
+    return 0;
+}
